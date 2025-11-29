@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app@latest temp-board --typescript --tailwind --app --no-src-dir --import-alias \"@/*\" --eslint --turbopack --no-git)",
+      "Bash(pkill:*)",
+      "Bash(npm install)",
+      "WebFetch(domain:okky.kr)",
+      "Bash(node scripts/generateTestPosts.js:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nInitial commit: OKKY-style community board\n\n- Next.js 15 + React 19 + TypeScript + Tailwind CSS\n- Posts and comments with pagination (20 posts/page)\n- File-based JSON data storage\n- OKKY-inspired design with dark mode support\n- Test data generator (2000 posts)\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git push:*)",
+      "Bash(git pull:*)",
+      "Bash(git commit:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
